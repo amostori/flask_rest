@@ -15,10 +15,6 @@ from resources.tag import blp as TagBlueprint
 from resources.user import blp as UserBlueprint
 
 
-# docker build -t online .
-# docker run -dp 5005:5000 -w /app -v "$(pwd):/app" online
-# http://127.0.0.1:5000/swagger-ui
-
 def create_app(db_url=None):
     app = Flask(__name__)
     app.config["PROPAGATE_EXCEPTIONS"] = True
