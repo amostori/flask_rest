@@ -24,3 +24,5 @@ Git:
 13. Tagi się nie pushują. Aby wysłać tagi na serwer wpisz: `git push origin --tags`
 14. Usuwanie tagów lokalnie: `git tag -d <tagname>`.
 15. Usuwanie tagów z serwera: `git push origin --delete <tagname>`
+
+`docker run -dp 5000:5000 -w /app -v "$(pwd):/app" teclado-site-flask sh -c "flask run --host 0.0.0.0"`
