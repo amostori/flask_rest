@@ -18,7 +18,7 @@ Git:
    komendą `git checkout -- nazwa.pliku` można cofnąć ostatnie zmiany.
 
 9. Po commit: `git tag -a M2 -m "whatsoever"` by nadać tag bieżącemu commitowi.
-10. Następnie: `git checkout TAG` by przenieść się do commita.
+10. Następnie: `git checkout TAG` by przenieść się do commita. `git checkout master` by wrócić.
 11. Po pracy przed powrotem do ostatniego commita usuń wszystkie zmiany z bieżącego: `git reset --hard`.
 12. Aby stagować stare commity: `git tag -a TAG numer_hasha_commita -m "Tag Message"`
 13. Tagi się nie pushują. Aby wysłać tagi na serwer wpisz: `git push origin --tags`
