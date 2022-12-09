@@ -25,4 +25,9 @@ Git:
 14. Usuwanie tagów lokalnie: `git tag -d <tagname>`.
 15. Usuwanie tagów z serwera: `git push origin --delete <tagname>`
 
-`docker run -dp 5000:5000 -w /app -v "$(pwd):/app" teclado-site-flask sh -c "flask run --host 0.0.0.0"`
+### Uwaga, w pliku app.py nie może być komentarzy bo Render się wysypie!
+Aby uruchomić aplikację lokalnie  z bazą danych Elephant należy użyć poniższych komend:
+`docker build -t nazwa_projektu .`
+`docker run -dp 5000:5000 -w /app -v "$(pwd):/app" nazwa_projektu sh -c "flask run --host 0.0.0.0"`
+Następnie trzeba zbudować bazę danych:
+`flask db upgrade`
